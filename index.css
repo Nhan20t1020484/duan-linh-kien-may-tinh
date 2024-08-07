@@ -2,17 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(248, 243, 243);
+    background-color: white;
 }
 
 
 .header {
-    height: 100px;
+    height: 130px;
     width: 100%;
-    background-color: orange;
+    background-color: #546CE8;
     position: fixed;
     top: 0;
     z-index: 999;
+    left: 0;
 }
 .logo{
     margin-left: 5%;
@@ -35,4 +36,92 @@
 }
 .header-2{
     height: 20px;
+    position:absolute;
+    top: 70%;
+    width: 100%;
+}
+
+.button-header-0{
+    height: 20px;
+    position:absolute;
+    color: white;
+    left: 20%;
+
+}
+.button-header-1{
+    height: 20px;
+    position:absolute;
+    color: white;
+    left: 28%;
+
+}
+.button-header-2{
+    height: 20px;
+    color: white;
+    position:absolute;
+
+    left: 40%;
+
+}
+.button-header-3{
+    height: 20px;
+    position:absolute;
+    color: white;
+    left: 50%;
+
+}
+.button-header-4{
+    height: 20px;
+    position:absolute;
+    color: white;
+    left: 60%;
+}
+
+.header-3{
+    position: absolute;
+    top: 23%;
+    right: 33%;
+}
+.button-header-5{
+    color: white;
+
+}
+
+.sodienthoai{
+    position: absolute;
+    left: 150%;
+    top: -70%;
+}
+.button-header-6{
+    position: absolute;
+    right: -700%;
+    color: white;
+}
+.button-header-7{
+    position: absolute;
+    right: -1300%;
+    color: white;
+}
+.xaydungpc{
+    position: absolute;
+    width: 500%;
+    left: 150%;
+    top: -50%;
+}
+.button-header-8{
+    position: absolute;
+    right: -2000%;
+    color: white;
+}
+.slide{
+    background-color: white;
+    height: 700px;
+    width: 70%;
+    top: 150px;
+    left: 10%;
+}
+
+.carousel{
+    width: 120%;
+    height: 450px;
 }
