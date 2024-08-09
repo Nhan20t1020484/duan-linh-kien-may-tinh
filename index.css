@@ -1,11 +1,8 @@
-.main {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: white;
+
+.main1{
+    background-color: rgb(219, 216, 216);
+    height: 10000px;
 }
-
-
 .header {
     height: 130px;
     width: 100%;
@@ -114,7 +111,7 @@
     color: white;
 }
 .slide{
-    background-color: white;
+    background-color: rgb(219, 216, 216);
     height: 700px;
     width: 70%;
     top: 150px;
@@ -125,3 +122,107 @@
     width: 120%;
     height: 450px;
 }
+.main{
+    height: 500px;
+    width: 100%;
+    margin-top: -60px;
+}
+
+/* .main .left{
+    width: 15%;
+    height: 85%;
+    float: left;
+}
+.main .left .main-left-a{
+    width: 95%;
+    height: 40%;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-top: 5px;
+
+}
+.main .left .main-left-b{
+    width: 95%;
+    height: 60%;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-top: 5px;
+ } */
+.main .mid {
+    width: 83%;
+    height: 30%;
+    float: left;
+    position: absolute;
+    left: 7.5%;
+    background-color: white;
+}
+/* .main .mid .main-mid-1{
+    width: 48%;
+    height: 25%;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+    
+}
+.main .mid .main-mid-2{
+    width: 48%;
+    height: 25%;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-top: 5px;
+    float: left;
+} */
+.main .mid .main-mid-3{
+    width:  15.7%;
+    height: 25%;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+}
+.main .mid .main-mid-4{
+    width:  15.7%;
+    height: 25%;
+ 
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+}
+.main .mid .main-mid-5{
+    width:  15.7%;
+    height: 25%;
+   
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+}
+.main .mid .main-mid-6{
+    width:  15.7%;
+    height: 25%;
+   
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+}
+.main .mid .main-mid-7{
+    width:  15.7%;
+    height: 25%;
+   
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+}
+.main .mid .main-mid-8{
+    width:  15.7%;
+    height: 25%;
+   
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+}
+/* .main .right {
+    width: 20%;
+    height: 93%;
+    border: 1px solid black;
+    float: left;
+} */
