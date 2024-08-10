@@ -127,29 +127,28 @@
     margin-top: -75px;
 }
 
-/* .main .left{
+/* .left{
     width: 15%;
     height: 85%;
     float: left;
 }
-.main .left .main-left-a{
+/* .main .left .main-left-a{
     width: 95%;
     height: 40%;
     border: 1px solid black;
     margin-left: 5px;
     margin-top: 5px;
 
-}
-.main .left .main-left-b{
-    width: 95%;
+} */
+/* .main .left .main-left-b{
+    width: 35%;
     height: 60%;
     border: 1px solid black;
-    margin-left: 5px;
     margin-top: 5px;
- } */
+ } */ 
 .main .mid {
     width: 83%;
-    height: 30%;
+    height: 27%;
     float: left;
     position: absolute;
     left: 7.5%;
@@ -174,18 +173,74 @@
 } */
 .main .mid .main-mid-3{
     width:  15.7%;
+    height: 95%;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+    /* border: solid 1px black; */
+}
+.main-mid-3 {
+    width: 200px;
+    height: 200px;
+    background-color: white; /* Màu nền ban đầu */
+    transition: background-color 0.5s ease-in-out;
+}
+
+.main-mid-3:hover {
+    background-color: white; /* Màu nền khi hover */
+
+.image-container {
+        display: inline-block;
+        background-color: white; /* Màu nền ban đầu */
+        padding: 10px;
+        transition: background-color 0.5s ease-in-out;
+        border-radius: 10%;
+    }
+
+    .image-container:hover {
+        background-color: lightcoral; /* Màu nền khi hover */
+        border-radius: 10%;
+    }
+
+    .image-container img {
+        display: block;
+        max-width: 100%; /* Để hình ảnh không vượt quá kích thước của thẻ bao */
+    }
+}
+.main .mid .main-mid-4{
+    width:  15.7%;
     height: 25%;
     margin-left: 5px;
     margin-top: 5px;
     float: left;
 }
-.main .mid .main-mid-4{
-    width:  15.7%;
-    height: 25%;
- 
-    margin-left: 5px;
-    margin-top: 5px;
-    float: left;
+.main-mid-4 {
+    width: 200px;
+    height: 200px;
+    background-color: white; /* Màu nền ban đầu */
+    transition: background-color 0.5s ease-in-out;
+}
+
+.main-mid-4:hover {
+    background-color: white; /* Màu nền khi hover */
+
+.image-container4 {
+        display: inline-block;
+        background-color: white; /* Màu nền ban đầu */
+        padding: 10px;
+        transition: background-color 0.5s ease-in-out;
+        border-radius: 10%;
+    }
+
+    .image-container4:hover {
+        background-color: lightcoral; /* Màu nền khi hover */
+        border-radius: 10%;
+    }
+
+    .image-container4 img {
+        display: block;
+        max-width: 100%; /* Để hình ảnh không vượt quá kích thước của thẻ bao */
+    }
 }
 .main .mid .main-mid-5{
     width:  15.7%;
@@ -195,6 +250,34 @@
     margin-top: 5px;
     float: left;
 }
+.main-mid-5 {
+    width: 200px;
+    height: 200px;
+    background-color: white; /* Màu nền ban đầu */
+    transition: background-color 0.5s ease-in-out;
+}
+
+.main-mid-5:hover {
+    background-color: white; /* Màu nền khi hover */
+
+.image-container5 {
+        display: inline-block;
+        background-color: white; /* Màu nền ban đầu */
+        padding: 10px;
+        transition: background-color 0.5s ease-in-out;
+        border-radius: 10%;
+    }
+
+    .image-container5:hover {
+        background-color: lightcoral; /* Màu nền khi hover */
+        border-radius: 10%;
+    }
+
+    .image-container5 img {
+        display: block;
+        max-width: 100%; /* Để hình ảnh không vượt quá kích thước của thẻ bao */
+    }
+}
 .main .mid .main-mid-6{
     width:  15.7%;
     height: 25%;
@@ -202,6 +285,34 @@
     margin-left: 5px;
     margin-top: 5px;
     float: left;
+}
+.main-mid-6 {
+    width: 200px;
+    height: 200px;
+    background-color: white; /* Màu nền ban đầu */
+    transition: background-color 0.5s ease-in-out;
+}
+
+.main-mid-6:hover {
+    background-color: white; /* Màu nền khi hover */
+
+.image-container6 {
+        display: inline-block;
+        background-color: white; /* Màu nền ban đầu */
+        padding: 10px;
+        transition: background-color 0.5s ease-in-out;
+        border-radius: 10%;
+    }
+
+    .image-container6:hover {
+        background-color: lightcoral; /* Màu nền khi hover */
+        border-radius: 10%;
+    }
+
+    .image-container6 img {
+        display: block;
+        max-width: 100%; /* Để hình ảnh không vượt quá kích thước của thẻ bao */
+    }
 }
 .main .mid .main-mid-7{
     width:  15.7%;
@@ -211,6 +322,34 @@
     margin-top: 5px;
     float: left;
 }
+.main-mid-7 {
+    width: 200px;
+    height: 200px;
+    background-color: white; /* Màu nền ban đầu */
+    transition: background-color 0.5s ease-in-out;
+}
+
+.main-mid-7:hover {
+    background-color: white; /* Màu nền khi hover */
+
+.image-container7 {
+        display: inline-block;
+        background-color: white; /* Màu nền ban đầu */
+        padding: 10px;
+        transition: background-color 0.5s ease-in-out;
+        border-radius: 10%;
+    }
+
+    .image-container7:hover {
+        background-color: lightcoral; /* Màu nền khi hover */
+        border-radius: 10%;
+    }
+
+    .image-container7 img {
+        display: block;
+        max-width: 100%; /* Để hình ảnh không vượt quá kích thước của thẻ bao */
+    }
+}
 .main .mid .main-mid-8{
     width:  15.7%;
     height: 25%;
@@ -218,6 +357,34 @@
     margin-left: 5px;
     margin-top: 5px;
     float: left;
+}
+.main-mid-8 {
+    width: 200px;
+    height: 200px;
+    background-color: white; /* Màu nền ban đầu */
+    transition: background-color 0.5s ease-in-out;
+}
+
+.main-mid-8:hover {
+    background-color: white; /* Màu nền khi hover */
+
+.image-container8 {
+        display: inline-block;
+        background-color: white; /* Màu nền ban đầu */
+        padding: 10px;
+        transition: background-color 0.5s ease-in-out;
+        border-radius: 10%;
+    }
+
+    .image-container8:hover {
+        background-color: lightcoral; /* Màu nền khi hover */
+        border-radius: 10%;
+    }
+
+    .image-container8 img {
+        display: block;
+        max-width: 100%; /* Để hình ảnh không vượt quá kích thước của thẻ bao */
+    }
 }
 /* .main .right {
     width: 20%;
@@ -232,7 +399,7 @@
     position: absolute;
     left: 7.5%;
     background-color: white;
-    margin-top: -205px;
+    margin-top: -230px;
 }
 .sanpham-main-1{
     width:  19.5%;
