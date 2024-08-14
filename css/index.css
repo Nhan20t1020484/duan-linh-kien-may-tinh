@@ -127,25 +127,6 @@
     margin-top: -75px;
 }
 
-/* .left{
-    width: 15%;
-    height: 85%;
-    float: left;
-}
-/* .main .left .main-left-a{
-    width: 95%;
-    height: 40%;
-    border: 1px solid black;
-    margin-left: 5px;
-    margin-top: 5px;
-
-} */
-/* .main .left .main-left-b{
-    width: 35%;
-    height: 60%;
-    border: 1px solid black;
-    margin-top: 5px;
- } */ 
 .main .mid {
     width: 83%;
     height: 27%;
@@ -154,30 +135,13 @@
     left: 7.5%;
     background-color: white;
 }
-/* .main .mid .main-mid-1{
-    width: 48%;
-    height: 25%;
-    border: 1px solid black;
-    margin-left: 5px;
-    margin-top: 5px;
-    float: left;
-    
-}
-.main .mid .main-mid-2{
-    width: 48%;
-    height: 25%;
-    border: 1px solid black;
-    margin-left: 10px;
-    margin-top: 5px;
-    float: left;
-} */
+
 .main .mid .main-mid-3{
     width:  15.7%;
     height: 95%;
     margin-left: 5px;
     margin-top: 5px;
     float: left;
-    /* border: solid 1px black; */
 }
 .main-mid-3 {
     width: 200px;
@@ -189,16 +153,16 @@
 .main-mid-3:hover {
     background-color: white; /* Màu nền khi hover */
 
-.image-container {
+.image-container { 
         display: inline-block;
         background-color: white; /* Màu nền ban đầu */
-        padding: 10px;
+        padding: 5px;
         transition: background-color 0.5s ease-in-out;
         border-radius: 10%;
     }
 
     .image-container:hover {
-        background-color: lightcoral; /* Màu nền khi hover */
+        background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Màu nền khi hover */
         border-radius: 10%;
     }
 
@@ -227,13 +191,13 @@
 .image-container4 {
         display: inline-block;
         background-color: white; /* Màu nền ban đầu */
-        padding: 10px;
+        padding: 5px;
         transition: background-color 0.5s ease-in-out;
         border-radius: 10%;
     }
 
     .image-container4:hover {
-        background-color: lightcoral; /* Màu nền khi hover */
+        background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Màu nền khi hover */
         border-radius: 10%;
     }
 
@@ -263,13 +227,13 @@
 .image-container5 {
         display: inline-block;
         background-color: white; /* Màu nền ban đầu */
-        padding: 10px;
+        padding: 5px;
         transition: background-color 0.5s ease-in-out;
         border-radius: 10%;
     }
 
     .image-container5:hover {
-        background-color: lightcoral; /* Màu nền khi hover */
+        background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Màu nền khi hover */
         border-radius: 10%;
     }
 
@@ -299,13 +263,13 @@
 .image-container6 {
         display: inline-block;
         background-color: white; /* Màu nền ban đầu */
-        padding: 10px;
+        padding: 5px;
         transition: background-color 0.5s ease-in-out;
         border-radius: 10%;
     }
 
     .image-container6:hover {
-        background-color: lightcoral; /* Màu nền khi hover */
+        background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Màu nền khi hover */
         border-radius: 10%;
     }
 
@@ -335,13 +299,13 @@
 .image-container7 {
         display: inline-block;
         background-color: white; /* Màu nền ban đầu */
-        padding: 10px;
+        padding: 5px;
         transition: background-color 0.5s ease-in-out;
         border-radius: 10%;
     }
 
     .image-container7:hover {
-        background-color: lightcoral; /* Màu nền khi hover */
+        background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Màu nền khi hover */
         border-radius: 10%;
     }
 
@@ -371,13 +335,13 @@
 .image-container8 {
         display: inline-block;
         background-color: white; /* Màu nền ban đầu */
-        padding: 10px;
+        padding: 5px;
         transition: background-color 0.5s ease-in-out;
         border-radius: 10%;
     }
 
     .image-container8:hover {
-        background-color: lightcoral; /* Màu nền khi hover */
+        background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Màu nền khi hover */
         border-radius: 10%;
     }
 
@@ -386,12 +350,15 @@
         max-width: 100%; /* Để hình ảnh không vượt quá kích thước của thẻ bao */
     }
 }
-/* .main .right {
-    width: 20%;
-    height: 93%;
-    border: 1px solid black;
+.add_sanpham{
+    width: 83%;
+    height: 15%;
     float: left;
-} */
+    position: absolute;
+    left: 7.5%;
+    background-color: white;
+    margin-top: -12.5%;
+}
 .sanpham{
     width: 83%;
     height: 200%;
@@ -399,41 +366,9 @@
     position: absolute;
     left: 7.5%;
     background-color: white;
-    margin-top: -230px;
+    margin-top: -4.5%;
 }
-.sanpham-main-1{
-    width:  19.5%;
-    height: 29%;
-    margin-left: 5px;
-    margin-top: 5px;
-    float: left;
-    border: 1px solid rgb(214, 211, 211);
-}
-.sanpham-main-2{
-    width:  19.5%;
-    height: 29%;
-    margin-left: 5px;
-    margin-top: 5px;
-    float: left;
-    border: 1px solid rgb(214, 211, 211);
-}
-.sanpham-main-3{
-    width:  19.5%;
-    height: 29%;
-    margin-left: 5px;
-    margin-top: 5px;
-    float: left;
-    border: 1px solid rgb(214, 211, 211);
-}
-.sanpham-main-4{
-    width:  19.5%;
-    height: 29%;
-    margin-left: 5px;
-    margin-top: 5px;
-    float: left;
-    border: 1px solid rgb(214, 211, 211);
-}
-.sanpham-main-5{
+.sanpham-main{
     width:  19.5%;
     height: 29%;
     margin-left: 5px;
@@ -443,33 +378,3 @@
 }
 
 
-.stars {
-    width: 270px;
-    display: inline-block;
-  }
-   
-  
-  input.star { display: none; }
-   
-  label.star {
-    float: right;
-    padding: 0px 2px;
-    font-size: 20px;
-    color: #444;
-    transition: all .2s;
-  }
-   
-  input.star:checked ~ label.star:before {
-    content: '\f005';
-    color: yellow;
-    transition: all .25s;
-  }
-   
-  input.star-1:checked ~ label.star:before { color: #F62; }
-   
-  label.star:hover { transform: rotate(-15deg) scale(1.3); }
-   
-  label.star:before {
-    content: '\f006';
-    font-family: FontAwesome;
-  }

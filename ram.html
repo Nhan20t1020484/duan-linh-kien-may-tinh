@@ -5,10 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="vga-container">
+    <div class="container-fluid main1">
         <div class="header">
             <div class="logo">
                 <h2 class="text-header-1">
@@ -19,8 +31,10 @@
                 </h2>
             </div>
             <div class="search">
-                <input type="text" style="width: 50%; height: 40px; margin-top: 15px;" placeholder="Tìm Kiếm Sản Phẩm">
-                <button class="button-search" style="height: 40px;"> Tìm kiếm</button>
+                <!-- <input type="text" style="width: 50%; height: 40px; margin-top: 15px;" placeholder="Tìm Kiếm Sản Phẩm"> -->
+                <input type="text" id="name-search" placeholder="Nhập Tên Sản Phẩm" style="width: 40%;" oninput="getByName()">
+                <br>
+                <button onclick="getByName()">Tìm Kiếm</button>
             </div>
             <div class="header-2">
                 <a class="button-header-0" href="/"><i class="fa-solid fa-bolt" style="color: yellow;"></i> Flash
@@ -64,8 +78,124 @@
             </div>
 
         </div>
-    </div>
+        <div class="slide">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src=" https://anphat.com.vn/media/banner/19_Jul2a6c006c967745a04d4f1fd865b8857b.jpg"
+                            class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://anphat.com.vn/media/banner/03_Apr9b9e030a77073654ca2093cc736165ff.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://anphat.com.vn/media/banner/30_Jul483abdf467b36aee7d42a554814ebedf.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://anphat.com.vn/media/banner/23_Nov2765e167c48552297f9b2a8d75f10998.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mid">
+                <div class="main-mid-3">
+                    <a class="main-mid-3-hover" href="/" style="color: black;">
+                        <center><img class="image-container"
+                                src="https://nguyencongpc.vn/media/product/25341-14900k.png" style="width:  85%; "
+                                alt="">
+                            <p><b>CPU</b>
+                        </center>
+                    </a>
+                </div>
+                <div class="main-mid-4">
+                    <a class="main-mid-4-hover" href="vga.html" style="color: black;">
+                        <center><img class="image-container4"
+                                src="https://product.hstatic.net/200000420363/product/an-hinh-vga-zotac-gaming-geforce-rtx-4060-ti-16gb-amp-zt-d40620f-10m-6_d06adc88731d4316b8fcfca4c05709e7_master.jpg"
+                                style="width:  85%; " alt="">
+                            <p><b>VGA</b>
+                        </center>
+                    </a>
+                </div>
+                <div class="main-mid-5">
+                    <a class="main-mid-5-hover" href="mainboard.html" style="color: black;">
+                        <center><img class="image-container5"
+                                src="https://product.hstatic.net/200000453251/product/mainboard-pc-asus-prime-h610m-k-d4-2_adeef29012684836a2ae9d9e42281435_master.png"
+                                style="width:  85%;" alt="">
+                            <p><b>Mainboard</b>
+                        </center>
+                    </a>
+                </div>
+                <div class="main-mid-6">
+                    <a class="main-mid-6-hover" href="ram.html" style="color: black;">
+                        <center><img class="image-container6"
+                                src="https://images-na.ssl-images-amazon.com/images/I/61XmhmEup8L.jpg"
+                                style="width:  85%;" alt="">
+                            <p><b>RAM</b>
+                        </center>
+                    </a>
+                </div>
+                <div class="main-mid-7">
+                    <a class="main-mid-7-hover" href="ssd.html" style="color: black;">
+                        <center><img class="image-container7"
+                                src="https://tuanphong.vn/pictures/full/2022/12/1671705185-414-ktc-product-ssd-snv2s-1000g-2-zm-lg.jpg"
+                                style="width:  85%;" alt="">
+                            <p><b>SSD</b>
+                        </center>
+                    </a>
+                </div>
+                <div class="main-mid-8">
+                    <a class="main-mid-8-hover" href="vocase.html" style="color: black;">
+                        <center><img class="image-container8"
+                                src="https://bizweb.dktcdn.net/thumb/1024x1024/100/357/448/products/vo-case-kenoo-luxe-v1-mau-trang.jpg?v=1685842937153"
+                                style="width:  85%;" alt="">
+                            <p><b>Vỏ Case</b>
+                        </center>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="add_sanpham">
+            <!-- <div class="add_sanpham">
+                <a href="add.html">Thêm mới sản phẩm</a> |
+                <a href="index.html">Trang chủ</a>
+            </div> -->
+            <h3>Quản Lý Sản Phẩm</h3>
+            <input type="text" id="img" placeholder="Nhập link ảnh">
+            <input type="text" id="name" placeholder="Nhập tên">
+            <input type="text" id="id" placeholder="Nhập id">
+            <input type="text" id="price_old" placeholder="Nhập giá gốc">
+            <input type="text" id="price_new" placeholder="Nhập giá khuyến mãi">     
+           
+            <div id="btn">
+                <button onclick="add()">Thêm mới</button> 
+            </div>
+        </div>
+         <div  id="sanpham" class="sanpham">
+            <div class="sanpham-main">
+                
+            </div>
 
+        </div>
+        
+
+    </div>
+    <script src="js/product.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/indexram.js"></script>
 </body>
 
 </html>
