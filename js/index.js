@@ -108,6 +108,6 @@ function edit(index) {
     document.getElementById("id").value = "";
     document.getElementById("price_old").value = "";
     document.getElementById("price_new").value = "";
-     document.getElementById("btn").innerHTML = `<button onclick="add()">Thêm mới</button> `
+    document.getElementById("btn").innerHTML = `<button onclick="add()">Thêm mới</button> `
 }
 getAll()

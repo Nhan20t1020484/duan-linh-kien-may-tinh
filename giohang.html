@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container-fluid main1">
+        <div class="header">
+            <div class="logo">
+                <h2 class="text-header-1">
+                    Thành Nhân
+                </h2>
+                <h2 class="text-header-2">
+                    Technology
+                </h2>
+            </div>
+            <div class="search">
+                <!-- <input type="text" style="width: 50%; height: 40px; margin-top: 15px;" placeholder="Tìm Kiếm Sản Phẩm"> -->
+                <input type="text" id="name-search" placeholder="Nhập Tên Sản Phẩm" style="width: 40%;">
+                <br>
+                <button onclick="getByName()">Tìm Kiếm</button>
+            </div>
+            <div class="header-2">
+                <a class="button-header-0" href="/"><i class="fa-solid fa-bolt" style="color: yellow;"></i> Flash
+                    Sale</a>
+                <a class="button-header-1" href="/"><i class="fa-solid fa-phone-volume" style="color: red;"></i> Tư Vấn
+                    Bán Hàng</a>
+                <a class="button-header-2" href="/"><i class="fa-solid fa-laptop" style="color: rgb(34, 201, 34);"></i>
+                    Laptop xả kho</a>
+                <a class="button-header-3" href="/"><i class="fa-solid fa-right-left"
+                        style="color: rgb(243, 10, 243);"></i> Đổi trả miễn phí</a>
+                <a class="button-header-4" href="/"><i class="fa-solid fa-truck-fast"
+                        style="color: rgb(255, 123, 0);"></i> Miễn Phí Vận Chuyển</a>
+
+            </div>
+            <div class="header-3">
+                <a class="button-header-5" href="/"><i class="fa-solid fa-phone"
+                        style="color: white; font-size: 25px;"></i>
+                    <div class="sodienthoai">02873034653
+                        <p>02899950012
+                            02899996142
+                    </div>
+                </a>
+                <a class="button-header-6" href=""><i class="fa-solid fa-computer"
+                        style="color: white; font-size:25px ;"></i>
+                    <div class="xaydungpc"> Xây dựng
+                        <p> Cấu hình PC
+
+                    </div>
+                </a>
+                <a class="button-header-7" href=""><i class="fa-solid fa-user"
+                        style="color: white; font-size:25px ;"></i>
+                    <div class="xaydungpc"> Đăng Nhập
+                        <p>Đăng Ký
+
+                    </div>
+                </a>
+                <a class="button-header-8" href=""><i class="fa-solid fa-cart-shopping"
+                        style="color: white; font-size: 40px;"></i></a>
+            </div>
+        </div>
+        <div class="body-giohang">
+            <div class="body-giohang-1">
+                <h1 style="margin-left: 5%; margin-top: 2%;">Giỏ hàng của bạn</h1>
+                <h5 style="color: red;margin-left: 5%;">Liên hệ nhân viên trước khi chuyển tiền mua hàng.</h4>
+                <h5 style="margin-left: 5%;">Để đặt hàng, quý khách vui lòng kiểm tra sản phẩm, số lượng, giá, màu sắc và điền các thông tin dưới đây:</h5>
+                <button class="xoagiohang"> Xóa Giỏ Hàng</button>
+                <hr style="margin-top: 80px; width: 90%;">
+            </div>
+            <div class="body-giohang-2">
+                <img style="width: 10%; margin-left: 5%; margin-top: 1%;"  src="https://anphat.com.vn/media/product/250_34978_cpu_amd_ryzen_7_5800x_anphat88.jpg" alt="">
+                <i class="fas fa-trash-alt" style="position: absolute; margin-top: 12%; margin-left: -5.5%;"></i>
+                <b class="sanphamgiohang" style="border: solid 1px black; position: absolute; margin-top: 2%;">VGA GIGABYTE RTX 3060 <p></p>Mã sản phẩm: VGGI0215</b>
+                <b class="giasanpham" style="border: solid 1px black; position:absolute; margin-left: 67%; margin-top: 10%;">
+                        11.990.000 VND
+                    <p> 8.599.000 VND</p>
+                    8.599.000 VND
+                     
+                </b>
+                <div class="soluongsanpham">
+                <button class="quantity-btn" style="position: absolute; margin-left: 82%; margin-top: 9%;" onclick="changeQuantity(this, -1)">-</button>
+                <input type="number" style="position: absolute; margin-left: 86%; margin-top: 9%; width: 6%; height: 5%;" class="quantity-input" value="10" min="1" readonly>
+                <button class="quantity-btn" style="position: absolute; margin-left: 92.5%;margin-top: 9%;" onclick="changeQuantity(this, 1)">+</button>
+                <script>
+                    function changeQuantity(element, delta) {
+                        var quantityInput = element.parentElement.querySelector('.quantity-input');
+                        var quantity = parseInt(quantityInput.value) + delta;
+            
+                        if (quantity >= 1) {
+                            quantityInput.value = quantity;
+            
+                            var row = element.closest('tr');
+                            var price = parseFloat(row.querySelector('td:nth-child(2)').innerText.replace('$', ''));
+                            var total = price * quantity;
+                            row.querySelector('.total-price').innerText = '$' + total.toFixed(2);
+                        }
+                    }
+                </script>
+                </div>
+            </div>
+            <hr style="width: 90%;">
+            <div>
+                <button class="dathanggiohang" >
+                    Đặt Hàng Ngay
+                </button>
+            </div>
+        </div>
+        <div class="xacnhandathang">
+            <h1 style="margin-top: 2%; margin-left: 2%;" class="xacnhandathang-h1">Xác Nhận Đặt Hàng</h1>
+            <h3 style="margin-left: 2%;" class="xacnhandathang-h3">1. Thông tin khách hàng</h3>
+            <input style="margin-left: 2%;"  type="radio" name="gioitinh"> Nam
+            <input style="margin-left: 2%;"  type="radio" name="gioitinh"> Nữ
+            <p></p>
+            <input type="text" placeholder="Họ và Tên" style="width: 95%; margin-left: 2%;">
+            <p></p>
+            <input type="text" placeholder="Email" style="width: 95%; margin-left: 2%;">
+            <p></p>
+            <input type="text" placeholder="Số điện thoại" style="width: 95%; margin-left: 2%;">
+            <p></p>
+            <select id="country" name="country"  style="margin-left: 2%; width: 95%;">
+                <option value="Vung Tau">Chọn tỉnh thành phố</option>
+                <option value="Vung Tau">Vũng Tàu</option>
+                <option value="HCM">Thành Phố Hồ Chí Minh</option>
+                <option value="Bac Lieu">Bạc Liêu</option>
+                <option value="Bac Giang">Bắc Giang</option>
+                <option value="Bac Kan">Bắc Kạn</option>
+                <option value="Bac Ninh">Bắc Ninh</option>
+                <option value="Ben Tre">Bến Tre</option>
+                <option value="Binh Duong">Bình Dương</option>
+                <option value="Binh Dinh">Bình Định</option>
+                <option value="Binh Phuoc">Bình Phước</option>
+                <option value="Binh Thuan">Bình Thuận</option>
+                <option value="Ca Mau">Cà Mau</option>
+                <option value="Cao Bang">Cao Bằng</option>
+                <option value="Can Tho">Cần Thơ</option>
+                <option value="Da Nang">Đà Nẵng</option>
+                <option value="Dak Lak">Đắk Lắk</option>
+                <option value="Dak Nong">Đắk Nông</option>
+                <option value="Dien Bien">Điện Biên</option>
+                <option value="Dong Nai">Đồng Nai</option>
+                <option value="Dong Thap">Đồng Tháp</option>
+                <option value="Gia Lai">Gia Lai</option>
+                <option value="Ha Giang">Hà Giang</option>
+                <option value="Ha Nam">Hà Nam</option>
+                <option value="Ha Noi">Hà Nội</option>
+                <option value="Ha Tinh">Hà Tĩnh</option>
+                <option value="Hai Duong">Hải Dương</option>
+                <option value="Hai Phong">Hải Phòng</option>
+                <option value="Hau Giang">Hậu Giang</option>
+                <option value="Hoa Binh">Hòa Bình</option>
+                <option value="Hung Yen">Hưng Yên</option>
+                <option value="Khanh Hoa">Khánh Hòa</option>
+                <option value="Kien Giang">Kiên Giang</option>
+                <option value="Kon Tum">Kon Tum</option>
+                <option value="Lai Chau">Lai Châu</option>
+                <option value="Lang Son">Lạng Sơn</option>
+                <option value="Lao Cai">Lào Cai</option>
+                <option value="Lam Dong">Lâm Đồng</option>
+                <option value="Long An">Long An</option>
+                <option value="Nam Dinh">Nam Định</option>
+                <option value="Nghe An">Nghệ An</option>
+                <option value="Ninh Binh">Ninh Bình</option>
+                <option value="Ninh Thuan">Ninh Thuận</option>
+                <option value="Phu Tho">Phú Thọ</option>
+                <option value="Phu Yen">Phú Yên</option>
+                <option value="Quang Binh">Quảng Bình</option>
+                <option value="Quang Nam">Quảng Nam</option>
+                <option value="Quang Ngai">Quảng Ngãi</option>
+                <option value="Quang Ninh">Quảng Ninh</option>
+                <option value="Quang Tri">Quảng Trị</option>
+                <option value="Soc Trang">Sóc Trăng</option>
+                <option value="Son La">Sơn La</option>
+                <option value="Tay Ninh">Tây Ninh</option>
+                <option value="Thai Binh">Thái Bình</option>
+                <option value="Thai Nguyen">Thái Nguyên</option>
+                <option value="Thanh Hoa">Thanh Hóa</option>
+                <option value="Thua Thien Hue">Thừa Thiên Huế</option>
+                <option value="Tien Giang">Tiền Giang</option>
+                <option value="TP Ho Chi Minh">TP Hồ Chí Minh</option>
+                <option value="Tra Vinh">Trà Vinh</option>
+                <option value="Tuyen Quang">Tuyên Quang</option>
+                <option value="Vinh Long">Vĩnh Long</option>
+                <option value="Vinh Phuc">Vĩnh Phúc</option>
+                <option value="Yen Bai">Yên Bái</option>
+            </select>
+            <p></p>
+            <input type="text" placeholder="Địa Chỉ" style="width: 95%; margin-left: 2%;">
+            <p></p>
+            <textarea style="width: 95%; margin-left: 2%;" placeholder="Ghi Chú"></textarea>
+            <p></p>
+            <h3 style="margin-left: 2%;" class="xacnhandathang-h3">2. Hình Thức Thanh Toán</h3>
+            <p></p>
+            <input style="margin-left: 2%; "  type="radio" name="thanhtoan" > Thanh Toán Khi Nhận Hàng
+            <p></p>
+            <input style="margin-left: 2%;"  type="radio" name="thanhtoan"> Thanh Toán chuyển khoản
+        </div>
+        
+    </div>

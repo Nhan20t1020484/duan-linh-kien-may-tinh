@@ -1,7 +1,7 @@
-class Storevga {
+class Storemainboard {
     
     name
-    listProductvga
+    listProductmainboard
 
     constructor(nameInput) {
         this.name = nameInput;
@@ -38,11 +38,11 @@ class Storevga {
     }
 
     saveStorage() {
-        localStorage.setItem("listProductvga", JSON.stringify(this.listProduct));
+        localStorage.setItem("listProductmainboard", JSON.stringify(this.listProduct));
     }
 
     getStorage() {
-        let list = JSON.parse(localStorage.getItem("listProductvga"));
+        let list = JSON.parse(localStorage.getItem("listProductmainboard"));
         if (list == null) {
             this.listProduct = [];
         } else {

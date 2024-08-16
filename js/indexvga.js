@@ -42,7 +42,7 @@ function add() {
     let id = document.getElementById("id").value;
     let price_old = document.getElementById("price_old").value;
     let price_new = document.getElementById("price_new").value;
-    let newProduct = new Product1(img, name, id, price_old, price_new);
+    let newProduct = new Productvga(img, name, id, price_old, price_new);
     storevga.add(newProduct);
     getAll();
     document.getElementById("img").value = "";
@@ -91,7 +91,7 @@ function showFormEdit(index) {
     document.getElementById("id").value = oldProduct.id;
     document.getElementById("price_old").value = oldProduct.price_old;
     document.getElementById("price_new").value = oldProduct.price_new;
-    document.getElementById("btn").innerHTML = `<button onclick="edit(${index})">Lưu</button> `
+    document.getElementById("btn-vga").innerHTML = `<button onclick="edit(${index})">Lưu</button> `
 }
 function edit(index) {
     let img = document.getElementById("img").value;
@@ -99,8 +99,8 @@ function edit(index) {
     let id = document.getElementById("id").value;
     let price_old = document.getElementById("price_old").value;
     let price_new = document.getElementById("price_new").value; 
-    let newProduct = new Product1(img, name,id, price_old,price_new);
-    store.edit(index, newProduct);
+    let newProduct = new Productvga(img, name,id, price_old,price_new);
+    storevga.edit(index, newProduct);
     alert("Sửa thành công");
     getAll();
     document.getElementById("img").value = "";
@@ -108,6 +108,6 @@ function edit(index) {
     document.getElementById("id").value = "";
     document.getElementById("price_old").value = "";
     document.getElementById("price_new").value = "";
-     document.getElementById("btn").innerHTML = `<button onclick="add()">Thêm mới</button> `
+     document.getElementById("btn-vga").innerHTML = `<button onclick="add()">Thêm mới</button> `
 }
 getAll()

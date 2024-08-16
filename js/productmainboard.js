@@ -1,4 +1,4 @@
-class Productvga {
+class Productmainboard {
     img
     name
     id
