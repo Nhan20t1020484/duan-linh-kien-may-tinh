@@ -23,12 +23,7 @@
     <div class="container-fluid main1">
         <div class="header">
             <div class="logo">
-                <h2 class="text-header-1">
-                    Thành Nhân
-                </h2>
-                <h2 class="text-header-2">
-                    Technology
-                </h2>
+                <a href="index.html"><img style="width: 60%;" src="image/logomt.jpg" alt=""></a>
             </div>
             <div class="search">
                 <!-- <input type="text" style="width: 50%; height: 40px; margin-top: 15px;" placeholder="Tìm Kiếm Sản Phẩm"> -->
@@ -56,6 +51,7 @@
                         <p>02899950012
                             02899996142
                     </div>
+                    
                 </a>
                 <a class="button-header-6" href=""><i class="fa-solid fa-computer"
                         style="color: white; font-size:25px ;"></i>
@@ -75,7 +71,12 @@
                         style="color: white; font-size: 40px;"></i></a>
             </div>
         </div>
-        <div class="body-giohang">
+        <div class="two-side">
+            <img src="https://anphat.com.vn/media/banner/11_Jun7e2a1c5b6e90790b8642a7616aba55a7.png" alt="" style="position: fixed; z-index: 999; margin-top: 8%; left: 0; width: 7.5%;">
+            <img src="https://anphat.com.vn/media/banner/16_Jul46e70f8de17991925a2e853d6b5cf762.jpg" alt="" style="position: fixed; z-index: 999; margin-top: 8%; left: 92%; width: 7.5%;">
+
+        </div>
+        <div class="body-giohang" >
             <div class="body-giohang-1">
                 <h1 style="margin-left: 5%; margin-top: 2%;">Giỏ hàng của bạn</h1>
                 <h5 style="color: red;margin-left: 5%;">Liên hệ nhân viên trước khi chuyển tiền mua hàng.</h4>
@@ -83,37 +84,10 @@
                 <button class="xoagiohang"> Xóa Giỏ Hàng</button>
                 <hr style="margin-top: 80px; width: 90%;">
             </div>
-            <div class="body-giohang-2">
-                <img style="width: 10%; margin-left: 5%; margin-top: 1%;"  src="https://anphat.com.vn/media/product/250_34978_cpu_amd_ryzen_7_5800x_anphat88.jpg" alt="">
-                <i class="fas fa-trash-alt" style="position: absolute; margin-top: 12%; margin-left: -5.5%;"></i>
-                <b class="sanphamgiohang" style="border: solid 1px black; position: absolute; margin-top: 2%;">VGA GIGABYTE RTX 3060 <p></p>Mã sản phẩm: VGGI0215</b>
-                <b class="giasanpham" style="border: solid 1px black; position:absolute; margin-left: 67%; margin-top: 10%;">
-                        11.990.000 VND
-                    <p> 8.599.000 VND</p>
-                    8.599.000 VND
-                     
-                </b>
-                <div class="soluongsanpham">
-                <button class="quantity-btn" style="position: absolute; margin-left: 82%; margin-top: 9%;" onclick="changeQuantity(this, -1)">-</button>
-                <input type="number" style="position: absolute; margin-left: 86%; margin-top: 9%; width: 6%; height: 5%;" class="quantity-input" value="10" min="1" readonly>
-                <button class="quantity-btn" style="position: absolute; margin-left: 92.5%;margin-top: 9%;" onclick="changeQuantity(this, 1)">+</button>
-                <script>
-                    function changeQuantity(element, delta) {
-                        var quantityInput = element.parentElement.querySelector('.quantity-input');
-                        var quantity = parseInt(quantityInput.value) + delta;
-            
-                        if (quantity >= 1) {
-                            quantityInput.value = quantity;
-            
-                            var row = element.closest('tr');
-                            var price = parseFloat(row.querySelector('td:nth-child(2)').innerText.replace('$', ''));
-                            var total = price * quantity;
-                            row.querySelector('.total-price').innerText = '$' + total.toFixed(2);
-                        }
-                    }
-                </script>
-                </div>
+            <div class="body-giohang-2" id="sanpham">
+
             </div>
+
             <hr style="width: 90%;">
             <div>
                 <button class="dathanggiohang" >
@@ -212,3 +186,11 @@
         </div>
         
     </div>
+    <script src="js/productgiohang.js"></script>
+    <script src="js/storegiohang.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/indexgiohang.js"></script>
+</body>
+
+</html>

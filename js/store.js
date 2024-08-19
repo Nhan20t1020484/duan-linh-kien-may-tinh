@@ -13,11 +13,6 @@ class Store {
         this.saveStorage();
     }
 
-    add1(newProduct) {
-        this.listProduct.push(newProduct);
-        this.saveStorage();
-    }
-
     getList() {
         return this.listProduct;
     }
@@ -74,5 +69,3 @@ class Store {
     // }
 
 }
-
-// Lấy => Get, Lưu => Set
