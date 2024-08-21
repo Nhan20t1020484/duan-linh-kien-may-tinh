@@ -45,53 +45,53 @@ function add1() {
 }
 
 
-function getAll1() {
-    let list = storegiohang.getList();
-    let html = ``;
-    for (let i = 0; i < list.length; i++) {
-        html = html + `
-        <div class="body-giohang-2">
-                <img style="width: 10%; margin-left: 5%; margin-top: 1%;"  src="${list[i].img}" alt="">
-                <i class="fas fa-trash-alt" style="position: absolute; margin-top: 12%; margin-left: -5.5%;"></i>
-                <b class="sanphamgiohang" style="position: absolute; margin-top: 2%;">${list[i].name}<p></p>Mã sản phẩm:${list[i].id}</b>
-                <b class="giasanpham" style="position:absolute; margin-left: 67%; margin-top: 10%;">
-                    ${list[i].price_old}
-                    <p> ${list[i].price_new}</p>
-                    ${list[i].price_new}
+// function getAll1() {
+//     let list = storegiohang.getList();
+//     let html = ``;
+//     for (let i = 0; i < list.length; i++) {
+//         html = html + `
+//         <div class="body-giohang-2">
+//                 <img style="width: 10%; margin-left: 5%; margin-top: 1%;"  src="${list[i].img}" alt="">
+//                 <i class="fas fa-trash-alt" style="position: absolute; margin-top: 12%; margin-left: -5.5%;"></i>
+//                 <b class="sanphamgiohang" style="position: absolute; margin-top: 2%;">${list[i].name}<p></p>Mã sản phẩm:${list[i].id}</b>
+//                 <b class="giasanpham" style="position:absolute; margin-left: 67%; margin-top: 10%;">
+//                     ${list[i].price_old}
+//                     <p> ${list[i].price_new}</p>
+//                     ${list[i].price_new}
                      
-                </b>
-                <div class="soluongsanpham">
-                <button class="quantity-btn" style="position: absolute; margin-left: 82%; margin-top: 9%;" onclick="changeQuantity(this, -1)">-</button>
-                <input type="number" style="position: absolute; margin-left: 86%; margin-top: 9%; width: 6%; height: 5%;" class="quantity-input" value="1" min="1" readonly>
-                <button class="quantity-btn" style="position: absolute; margin-left: 92.5%;margin-top: 9%;" onclick="changeQuantity(this, 1)">+</button>
-                <script>
-                    function changeQuantity(element, delta) {
-                        var quantityInput = element.parentElement.querySelector('.quantity-input');
-                        var quantity = parseInt(quantityInput.value) + delta;
+//                 </b>
+//                 <div class="soluongsanpham">
+//                 <button class="quantity-btn" style="position: absolute; margin-left: 82%; margin-top: 9%;" onclick="changeQuantity(this, -1)">-</button>
+//                 <input type="number" style="position: absolute; margin-left: 86%; margin-top: 9%; width: 6%; height: 5%;" class="quantity-input" value="1" min="1" readonly>
+//                 <button class="quantity-btn" style="position: absolute; margin-left: 92.5%;margin-top: 9%;" onclick="changeQuantity(this, 1)">+</button>
+//                 <script>
+//                     function changeQuantity(element, delta) {
+//                         var quantityInput = element.parentElement.querySelector('.quantity-input');
+//                         var quantity = parseInt(quantityInput.value) + delta;
             
-                        if (quantity >= 1) {
-                            quantityInput.value = quantity;
+//                         if (quantity >= 1) {
+//                             quantityInput.value = quantity;
             
-                            var row = element.closest('tr');
-                            var price = parseFloat(row.querySelector('td:nth-child(2)').innerText.replace('$', ''));
-                            var total = price * quantity;
-                            row.querySelector('.total-price').innerText = '$' + total.toFixed(2);
-                        }
-                    }
-                </script>
-      `
-    }
+//                             var row = element.closest('tr');
+//                             var price = parseFloat(row.querySelector('td:nth-child(2)').innerText.replace('$', ''));
+//                             var total = price * quantity;
+//                             row.querySelector('.total-price').innerText = '$' + total.toFixed(2);
+//                         }
+//                     }
+//                 </script>
+//       `
+//     }
 
-    document.getElementById("sanpham").innerHTML = html;
-}
-function remove1(index) {
-    let isConfirm = confirm("Bạn chắc chứ?")
-    if (isConfirm) {
-        store.remove(index);
-        alert("Xóa thành công");
-        getAll1();
-    }
-}
+//     document.getElementById("sanpham").innerHTML = html;
+// }
+// function remove1(index) {
+//     let isConfirm = confirm("Bạn chắc chứ?")
+//     if (isConfirm) {
+//         store.remove(index);
+//         alert("Xóa thành công");
+//         getAll1();
+//     }
+// }
 
 
 

@@ -1,6 +1,6 @@
 .main1{
     background-color: rgb(219, 216, 216);
-    height: 3000px;
+    height: 1500px;
 }
 .header {
     height: 130px;
@@ -101,7 +101,7 @@
 }
 .button-header-7{
     position: absolute;
-    right: -1300%;
+    right: -1700%;
     color: white;
 }
 .xaydungpc{
@@ -477,4 +477,18 @@
     
     margin-top: 47%;
     left: 25%;
+}
+
+.dangnhap{
+    width: 70%;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    margin-left: 13%;
+    margin-top: 10%;
+}
+.dangky{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -12%;
 }

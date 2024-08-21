@@ -29,7 +29,7 @@
                 <!-- <input type="text" style="width: 50%; height: 40px; margin-top: 15px;" placeholder="Tìm Kiếm Sản Phẩm"> -->
                 <input type="text" id="name-search" placeholder="Nhập Tên Sản Phẩm" style="width: 40%;">
                 <br>
-                <button onclick="getByName()">Tìm Kiếm</button>
+                <button onclick="getByName()" style="position: absolute; margin-left: 40%; margin-top: -1.7%;">Tìm Kiếm</button>
             </div>
             <div class="header-2">
                 <a class="button-header-0" href="/"><i class="fa-solid fa-bolt" style="color: yellow;"></i> Flash
@@ -52,19 +52,50 @@
                             02899996142
                     </div>
                 </a>
-                <a class="button-header-6" href=""><i class="fa-solid fa-computer"
+                <a class="button-header-6" href="" ><i class="fa-solid fa-computer"
                         style="color: white; font-size:25px ;"></i>
-                    <div class="xaydungpc"> Xây dựng
+                    <div class="xaydungpc" style=" width: 300%;"> Xây dựng
                         <p> Cấu hình PC
 
                     </div>
                 </a>
-                <a class="button-header-7" href=""><i class="fa-solid fa-user"
-                        style="color: white; font-size:25px ;"></i>
-                    <div class="xaydungpc"> Đăng Nhập
-                        <p>Đăng Ký
+                <a  class="button-header-7" href="login.html" style="color: white;"><i class="fa-solid fa-user" style="color: white; font-size:25px ; margin-top: -100%;"></i>
+                    <button id="loginBtn" style="display: none;">Đăng Nhập</button>
+                    <button id="logoutBtn" style="display: none; margin-top: 20%;">Đăng Xuất</button>
+                        <div id="welcomeMessage" style="position: absolute; margin-left: 20%; margin-top: -50%; width: 430%;  "></div>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                const username = localStorage.getItem('username');
+                                const welcomeMessage = document.getElementById("welcomeMessage");
+                                const loginBtn = document.getElementById("loginBtn");
+                                const logoutBtn = document.getElementById("logoutBtn");
+                    
+                                if (username) {
+                                    // Hiển thị thông điệp chào mừng nếu username tồn tại
+                                    welcomeMessage.textContent = `${username}`;
+                                    logoutBtn.style.display = "inline-block";  // Hiển thị nút Đăng Xuất
+                                } else {
+                                    // Hiển thị thông báo chưa đăng nhập
+                                    welcomeMessage.textContent = `Bạn chưa đăng nhập!`;
+                                    loginBtn.style.display = "inline-block";  // Hiển thị nút Đăng Nhập
+                                }
+                    
+                                // Chức năng Đăng Nhập
+                                loginBtn.addEventListener("click", function() {
+                                    window.location.href = 'login.html';  // Chuyển hướng sang trang đăng nhập
+                                });
+                    
+                                // Chức năng Đăng Xuất
+                                logoutBtn.addEventListener("click", function() {
+                                    localStorage.removeItem('username');  // Xóa username khỏi Local Storage
+                                    alert('Bạn đã đăng xuất thành công!');
+                                    window.location.reload();  // Tải lại trang sau khi đăng xuất
+                                });
+                            });
+                        </script>
 
-                    </div>
+                    <!-- <div class="xaydungpc" id="loginBtn"> Đăng Nhập
+                    </div> -->
                 </a>
                 <a class="button-header-8" href="giohang.html"><i class="fa-solid fa-cart-shopping"
                         style="color: white; font-size: 40px;"></i></a>
@@ -74,8 +105,8 @@
 
         </div>
         <div class="two-side">
-            <img src="https://anphat.com.vn/media/banner/11_Jun7e2a1c5b6e90790b8642a7616aba55a7.png" alt="" style="position: fixed; z-index: 999; margin-top: 8%; left: 0; width: 7.5%;">
-            <img src="https://anphat.com.vn/media/banner/16_Jul46e70f8de17991925a2e853d6b5cf762.jpg" alt="" style="position: fixed; z-index: 999; margin-top: 8%; left: 92%; width: 7.5%;">
+            <img class="anh2ben" src="https://anphat.com.vn/media/banner/11_Jun7e2a1c5b6e90790b8642a7616aba55a7.png" alt="" style="position: fixed; z-index: 999; margin-top: 8%; left: 0; width: 7.5%;">
+            <img class="anh2ben" src="https://anphat.com.vn/media/banner/16_Jul46e70f8de17991925a2e853d6b5cf762.jpg" alt="" style="position: fixed; z-index: 999; margin-top: 8%; left: 92%; width: 7.5%;">
 
         </div>
         <div class="slide">
@@ -191,6 +222,7 @@
         
 
     </div>
+    
     <script src="js/storegiohang.js"></script>
     <script src="js/productgiohang.js"></script>
     <!-- <script src="js/indexgiohang.js"></script> -->
