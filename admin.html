@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm</title>
+</head>
+<body>
+    <h3>Quản Lý Sản Phẩm</h3>
+    <input type="text" id="img" placeholder="Nhập link ảnh">
+            <input type="text" id="name" placeholder="Nhập tên sản phẩm">
+            <input type="text" id="id" placeholder="Nhập id">
+            <input type="text" id="price_old" placeholder="Nhập giá gốc">
+            <input type="text" id="price_new" placeholder="Nhập giá khuyến mãi">     
+           
+            <div id="btn">
+                <button onclick="add()">Thêm mới</button> 
+            </div>
+
+            <a  class="button-header-7" href="login.html" style="color: white;"><i class="fa-solid fa-user" style="color: white; font-size:25px ; margin-top: -100%;"></i>
+                <button id="logoutBtn" style="display: none; margin-left: 90%;">Đăng Xuất</button>
+                    <div id="welcomeMessage" style="position: absolute; margin-left: 20%; margin-top: -50%; width: 430%;  "></div>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const username = localStorage.getItem('username');
+                            const welcomeMessage = document.getElementById("welcomeMessage");
+                            const loginBtn = document.getElementById("loginBtn");
+                            const logoutBtn = document.getElementById("logoutBtn");
+                
+                            if (username) {
+                                // Hiển thị thông điệp chào mừng nếu username tồn tại
+                                welcomeMessage.textContent = `${username}`;
+                                logoutBtn.style.display = "inline-block";  // Hiển thị nút Đăng Xuất
+                            } else {
+                                // Hiển thị thông báo chưa đăng nhập
+                                welcomeMessage.textContent = `Bạn chưa đăng nhập!`;
+                                loginBtn.style.display = "inline-block";  // Hiển thị nút Đăng Nhập
+                            }
+                
+                            // Chức năng Đăng Nhập
+                            loginBtn.addEventListener("click", function() {
+                                window.location.href = 'login.html';  // Chuyển hướng sang trang đăng nhập
+                            });
+                
+                            // Chức năng Đăng Xuất
+                            logoutBtn.addEventListener("click", function() {
+                                localStorage.removeItem('username');  // Xóa username khỏi Local Storage
+                                alert('Bạn đã đăng xuất thành công!');
+                                window.location.reload();  // Tải lại trang sau khi đăng xuất
+                            });
+                        });
+                    </script>
+
+                <!-- <div class="xaydungpc" id="loginBtn"> Đăng Nhập
+                </div> -->
+            </a>
+
+
+
+    <h3>Danh sách sản phẩm</h3>
+    <a href="admin.html"><button>CPU</button></a>
+    <a href="adminvga.html"><button>VGA</button></a>
+    <a href="adminmainboard.html"><button>MainBoard</button></a>
+    <a href=""><button>RAM</button></a>
+    <a href=""><button>SSD</button></a>
+    <a href=""><button>Vỏ Case</button></a>
+    <table border="1" style="width: 100%;">
+        <tr>
+            <th style="width: 15%;">Sản Phẩm</th>
+            <th style="width: 15%;">Tên Sản Phẩm</th>
+            <th style="width: 10%;">Mã Sản Phẩm</th>
+            <th style="width: 15%;">Giá gốc sản phẩm</th>
+            <th style="width: 15%;">Giá khuyến mãi sản phẩm</th>
+            <th colspan="3">Hành động</th>
+        </tr>
+        <tbody id="list-product">
+            
+        </tbody>
+    </table>
+    <script src="js/product.js"></script>
+    <script src="js/store.js"></script> 
+    <script src="js/indexadmin.js"></script>
+</body>
+</html>

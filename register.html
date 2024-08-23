@@ -146,65 +146,50 @@
         </div>
         <div class="dangnhap">
             <h1 style="margin-left: 3%;">
-                Đăng Nhập
+                Đăng Ký
             </h1>
             <hr class="login-hr" style="width: 90%; ">
             <h5 style="margin-left: 3%;">
-                Thông tin khách hàng đăng nhập hệ thống
+                Thông tin khách hàng cần nhập để đăng ký tài khoản
             </h5>
             <h6 style="margin-left: 3%; margin-top: 3%;">
                 Email Đăng Nhập :
-                <input style="margin-left: 3%; width: 20%;"  type="text" id="username" placeholder="Tên Đăng Nhập">
+                <input style="margin-left: 4%; width: 20%;"  type="text" id="username" placeholder="Tên Đăng Nhập">
+            </h6>
+            <h6 style="margin-left: 3%;">
+                Họ và tên:
+                <input style="margin-left: 8.7%; width: 20%;"  type="text" id="user_name" placeholder="Họ và Tên">
+            </h6>
+            <h6 style="margin-left: 3%;">
+                Số điện thoại :
+                <input style="margin-left: 6.3%; width: 20%;"  type="text" id="phone" placeholder="Số điện thoại">
+            </h6>
+            <h6 style="margin-left: 3%;">
+                Địa Chỉ:
+                <input style="margin-left: 10%; width: 20%;"  type="text" id="address" placeholder="Địa Chỉ">
             </h6>
             <h6 style="margin-left: 3%; ">
                 Mật Khẩu :
-                <input style="margin-left: 7.3%; width: 20%;" type="password" id="password" placeholder="Mật Khẩu">
+                <input style="margin-left: 8.3%; width: 20%;" type="password" id="password" placeholder="Mật Khẩu">
             </h6>
-            <button onclick="submitLogin()" style="margin-left: 16.2%;">
-                Đăng Nhập
+            <h6 style="margin-left: 3%; ">
+                Xác nhận mật khẩu :
+                <input style="margin-left: 3%; width: 20%;" type="password" id="confine-password" placeholder="Xác nhận mật khẩu">
+            </h6>
+            <button onclick="submitLogin()" style="margin-left: 17.2%;">
+                Đăng ký ngay
             </button>
-            <a href="" style="color: black;">Quên mật khẩu</a>
             <div class="dangky">
             <h5 >
-                Bạn chưa là thành viên
+                Trở thành thành viên của chúng tôi
             </h5>
             <p>
                 Đăng ký là thành viên để hưởng nhiều lợi ích và đặt mua hàng dễ dàng hơn.
                 <p>
-                <a href="register.html">Đăng Ký</a>
+                <a href="login.html">Quay lại trang đăng nhập</a>
             </div>
             
         </div>
-        <!-- <div class="login-container">
-            <h2>Đăng Nhập</h2>
-            <input type="text" id="username" placeholder="Tên đăng nhập">
-            <input type="password" id="password" placeholder="Mật khẩu">
-            <button onclick="submitLogin()">Gửi</button>
-            <p>Chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
-        </div> -->
-    
-        <script>
-            function submitLogin() {
-                const username = document.getElementById("username").value;
-                const password = document.getElementById("password").value;
-                if (username === 'admin' && password === '123456') {
-                    // Lưu tên đăng nhập vào Local Storage
-                    localStorage.setItem('username', username);
-                    alert(`Đăng nhập thành công!\nTên đăng nhập: ${username}`);
-                    window.location.href = 'admin.html';  // Chuyển về trang bán hàng sau khi đăng nhập thành công
-                } else 
-                if (username && password) {
-                    // Lưu tên đăng nhập vào Local Storage
-                    localStorage.setItem('username', username);
-                    alert(`Đăng nhập thành công!\nTên đăng nhập: ${username}`);
-                    window.location.href = 'index.html';  // Chuyển về trang bán hàng sau khi đăng nhập thành công
-                } else {
-                    alert("Vui lòng nhập đầy đủ thông tin!");
-                }
-                
-            }
-        </script>
-
-    
 </body>
+<script src="register.js"></script>
 </html>

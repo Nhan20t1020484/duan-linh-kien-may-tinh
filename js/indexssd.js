@@ -1,4 +1,4 @@
-let store = new Store("Thành Nhân");
+let store = new Storessd("Thành Nhân");
 // let p1 = new Product(1, "Bánh", 2000, "https://cdn.tgdd.vn/Files/2022/04/04/1423817/bat-mi-cach-lam-banh-mi-baguette-phap-gion-xop-dac-ruot-202204041137450765.jpg");
 // let p2 = new Product(2, "Kẹo", 3000, "https://cdn.tgdd.vn/Files/2022/04/04/1423817/bat-mi-cach-lam-banh-mi-baguette-phap-gion-xop-dac-ruot-202204041137450765.jpg");
 // store.add(p1);
@@ -12,7 +12,7 @@ let store = new Store("Thành Nhân");
 
 function getByName() {
     let nameSearch = document.getElementById("name-search").value;
-    let list = store.getByNameContain(nameSearch);
+    let list = storessd.getByNameContain(nameSearch);
     let html = ``;
     for (let i = 0; i < list.length; i++) {
         html = html + `
@@ -42,8 +42,8 @@ function add() {
     let id = document.getElementById("id").value;
     let price_old = document.getElementById("price_old").value;
     let price_new = document.getElementById("price_new").value;
-    let newProduct = new Product(img, name, id, price_old, price_new);
-    store.add(newProduct);
+    let newProduct = new Productssd(img, name, id, price_old, price_new);
+    storevga.add(newProduct);
     getAll();
     document.getElementById("img").value = "";
     document.getElementById("name").value = "";
@@ -52,11 +52,11 @@ function add() {
     document.getElementById("price_new").value = "";
 }
 function getAll() {
-    let list = store.getList();
+    let list = storessd.getList();
     let html = ``;
     for (let i = 0; i < list.length; i++) {
         html = html + `
-        <div class="sanpham-main">
+        <div class="sanpham-main">  
                 <img src="${list[i].img}"
                     style="width: 100%;" alt="">
                 <b style="font-size: 20px; font-weight: 500; margin-left: 5px;"id="name">${list[i].name}</b>
@@ -78,20 +78,20 @@ function getAll() {
 function remove(index) {
     let isConfirm = confirm("Bạn chắc chứ?")
     if (isConfirm) {
-        store.remove(index);
+        storessd.remove(index);
         alert("Xóa thành công");
         getAll();
     }
 }
 
 function showFormEdit(index) {
-    let oldProduct = store.getProductByIndex(index);
+    let oldProduct = storessd.getProductByIndex(index);
     document.getElementById("img").value = oldProduct.img;
     document.getElementById("name").value = oldProduct.name;
     document.getElementById("id").value = oldProduct.id;
     document.getElementById("price_old").value = oldProduct.price_old;
     document.getElementById("price_new").value = oldProduct.price_new;
-    document.getElementById("btn").innerHTML = `<button onclick="edit(${index})">Lưu</button> `
+    document.getElementById("btn-ssd").innerHTML = `<button onclick="edit(${index})">Lưu</button> `
 }
 function edit(index) {
     let img = document.getElementById("img").value;
@@ -100,7 +100,7 @@ function edit(index) {
     let price_old = document.getElementById("price_old").value;
     let price_new = document.getElementById("price_new").value; 
     let newProduct = new Product(img, name,id, price_old,price_new);
-    store.edit(index, newProduct);
+    storessd.edit(index, newProduct);
     alert("Sửa thành công");
     getAll();
     document.getElementById("img").value = "";
@@ -108,6 +108,6 @@ function edit(index) {
     document.getElementById("id").value = "";
     document.getElementById("price_old").value = "";
     document.getElementById("price_new").value = "";
-     document.getElementById("btn").innerHTML = `<button onclick="add()">Thêm mới</button> `
+     document.getElementById("btn-ssd").innerHTML = `<button onclick="add()">Thêm mới</button> `
 }
 getAll()

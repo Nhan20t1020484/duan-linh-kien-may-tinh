@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm</title>
+</head>
+<body>
+    <h3>Quản Lý Sản Phẩm</h3>
+    <input type="text" id="img" placeholder="Nhập link ảnh">
+            <input type="text" id="name" placeholder="Nhập tên sản phẩm">
+            <input type="text" id="id" placeholder="Nhập id">
+            <input type="text" id="price_old" placeholder="Nhập giá gốc">
+            <input type="text" id="price_new" placeholder="Nhập giá khuyến mãi">     
+           
+            <div id="btn">
+                <button onclick="add()">Thêm mới</button> 
+            </div>
+
+    <button style="position: absolute;" >
+        Đăng Xuất
+    </button>
+
+
+
+    <h3>Danh sách sản phẩm</h3>
+    <a href="admin.html"><button>CPU</button></a>
+    <a href="adminvga.html"><button>VGA</button></a>
+    <a href="adminmainboard.html"><button>MainBoard</button></a>
+    <a href=""><button>RAM</button></a>
+    <a href=""><button>SSD</button></a>
+    <a href=""><button>Vỏ Case</button></a>
+    <table border="1" style="width: 100%;">
+        <tr>
+            <th style="width: 15%;">Sản Phẩm</th>
+            <th style="width: 15%;">Tên Sản Phẩm</th>
+            <th style="width: 10%;">Mã Sản Phẩm</th>
+            <th style="width: 15%;">Giá gốc sản phẩm</th>
+            <th style="width: 15%;">Giá khuyến mãi sản phẩm</th>
+            <th colspan="3">Hành động</th>
+        </tr>
+        <tbody id="list-product">
+            
+        </tbody>
+    </table> 
+    <script src="js/productvga.js"></script>
+    <script src="js/storevga.js"></script>
+    <script src="js/indexadminvga.js"></script>
+</body>
+</html>

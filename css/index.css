@@ -356,9 +356,9 @@
         max-width: 100%; /* Để hình ảnh không vượt quá kích thước của thẻ bao */
     }
 }
-.add_sanpham{
+.timkiemgia{
     width: 83%;
-    height: 15%;
+    height: 20%;
     float: left;
     position: absolute;
     left: 7.5%;
@@ -372,7 +372,7 @@
     position: absolute;
     left: 7.5%;
     background-color: white;
-    margin-top: -4.5%;
+    margin-top: -2%;
 }
 .sanpham-main{
     width:  19.5%;
